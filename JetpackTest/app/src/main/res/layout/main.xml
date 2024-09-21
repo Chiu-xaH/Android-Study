@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="计数"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="清零"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/b_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="添加数据"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/b_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="更新数据"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/b_del"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="删除数据"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/b_queryall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="查询全体数据"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/b_query"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="获取部分数据"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="后台"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="备用按钮"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="28dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:textSize="32sp" />
+
+    </LinearLayout>
+</ScrollView>

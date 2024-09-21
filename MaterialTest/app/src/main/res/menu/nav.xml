@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single" >
+        <item
+            android:id="@+id/i11"
+            android:icon="@drawable/nav_call"
+            android:title="拨号" />
+        <item
+            android:id="@+id/i12"
+            android:icon="@drawable/nav_friends"
+            android:title="朋友" />
+        <item
+            android:id="@+id/i13"
+            android:icon="@drawable/nav_location"
+            android:title="位置" />
+        <item
+            android:id="@+id/i14"
+            android:icon="@drawable/nav_mail"
+            android:title="邮箱" />
+        <item
+            android:id="@+id/i15"
+            android:icon="@drawable/nav_task"
+            android:title="任务" />
+    </group>
+</menu>

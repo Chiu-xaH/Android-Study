@@ -1,0 +1,1 @@
+infix fun String.beginsWith(prefix : String) = startsWith(prefix)
