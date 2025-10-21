@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name="xposedscope">
-        <item>com.hfut.schedule</item>
-        <item>com.chiuxah.wanwandongting</item>
-    </string-array>
-</resources>

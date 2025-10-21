@@ -1,11 +1,13 @@
 package com.example.lifedemo
 
+import android.os.HandlerThread
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.content.ServiceConnection
 import android.content.res.Configuration
 import android.os.Bundle
+import android.os.Handler
 import android.os.IBinder
 import android.util.Log
 import androidx.activity.ComponentActivity
@@ -103,9 +105,16 @@ class MainActivity : ComponentActivity() {
             Log.d("Activity","null")
         }
 
+    val handlerThread = HandlerThread("Example")
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Log.d("Activity","onCreate")
+        handlerThread.start()
+        val handler = Handler(handlerThread.looper)
+
+//        handlerThread.quitSafely()
         setContent {
             Box(modifier = Modifier.fillMaxSize()) {
                 var showPopup by remember { mutableStateOf(false) }
@@ -134,9 +143,12 @@ class MainActivity : ComponentActivity() {
 //                    )
                     Button(
                         onClick = {
-                            startService(Intent(this@MainActivity, MyIntentService::class.java).apply {
-                                putExtra("data","From MainActivity")
-                            })
+                            handler.post {
+                                Log.d("Handler","HandlerThread${handlerThread.threadId}")
+                            }
+//                            startService(Intent(this@MainActivity, MyIntentService::class.java).apply {
+//                                putExtra("data","From MainActivity")
+//                            })
 //                            showPopup = true
 //                            sendBroadcast(Intent("SEND").apply {
 //                                setClassName(
