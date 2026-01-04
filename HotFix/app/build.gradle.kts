@@ -40,7 +40,8 @@ android {
 }
 
 dependencies {
-
+//    implementation("com.github.Chiu-xaH:Bsdiff-Android-Library:1.0.3")
+    implementation("com.github.Chiu-xaH:DiffUpdater:2.0-dev01")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
