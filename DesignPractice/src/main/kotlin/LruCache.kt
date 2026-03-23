@@ -1,4 +1,6 @@
-class LruCache<K,V>(private val capacity: Int) {
+class LruCache<K,V>(
+    private val capacity: Int
+) {
     private class Node<K,V>(
         var key : K?,
         var value : V?,
